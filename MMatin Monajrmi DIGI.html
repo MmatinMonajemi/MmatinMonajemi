@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+
+<html dir="rtl" lang="fa-IR">
+    <head>
+    	<meta charset="UTF-8">
+    	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <!-- SEO -->
+<title>دیجی احیا</title>
+<!-- og meta for facebook, googleplus -->
+<meta property="og:title" content="دیجی احیا"/>
+<meta property="og:description" content=""/>
+<meta property="og:url" content="http://digiehya.ir"/>
+<meta property="og:type" content="website" />
+<meta property="og:image" content="http://digiehya.ir/wp-content/plugins/cmp-coming-soon-maintenance/themes/hardwork/img/hardwork_banner_large.jpg"/>
+
+<!-- twitter meta -->
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:title" content="دیجی احیا"/>
+<meta name="twitter:description" content=""/>
+<meta name="twitter:url" content="http://digiehya.ir"/>
+<meta name="twitter:image" content="http://digiehya.ir/wp-content/plugins/cmp-coming-soon-maintenance/themes/hardwork/img/hardwork_banner_large.jpg"/>
+
+<link rel="stylesheet" href="http://digiehya.ir/wp-content/plugins/cmp-coming-soon-maintenance/themes/hardwork/style.css?v=4.0.10" type="text/css" media="all">
+<link rel="stylesheet" href="http://digiehya.ir/wp-content/plugins/cmp-coming-soon-maintenance/css/animate.min.css">
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" rel="stylesheet" >
+<link href="https://fonts.googleapis.com/css?family=Playfair+Display:700%7CMontserrat:400,700,400&amp;subset=latin-ext,cyrillic,latin,vietnamese,cyrillic-ext" rel="stylesheet">
+
+
+        <style>
+            body,input {font-family:'Montserrat', 'sans-serif';color:#ffffff;}
+                            .social-list {background-color: rgba(0,0,0,0.4);}
+                            a {color:#ffffff;}
+            h1,h2,h3,h4,h5,h6 {font-family:'Playfair Display', 'sans-serif';}
+            body {font-size:17px; letter-spacing: 0px; font-weight:400;; }
+            h1:not(.text-logo),h2, h3,h4,h5,h6,.text-logo-wrapper {font-size:2.3529411764706em;letter-spacing: 0px; font-weight:700;font-style: normal;; }
+            h1 {font-weight:700;font-style: normal;;}
+        </style>
+
+        
+
+<style>
+    .wp-video {margin: 0 auto;}
+    .wp-video-shortcode {max-width: 100%;}
+    .grecaptcha-badge {display: none!important;}
+    .text-logo {display: inline-block;}
+    #gdpr-checkbox {-webkit-appearance: checkbox;-moz-appearance: checkbox;width: initial;height: initial;}
+    #counter.expired {display: none; }
+    input, button {
+        box-shadow: inset 0 0 0 0 !important;
+        -webkit-box-shadow: inset 0 0 0 0 !important;
+        -webkit-appearance: none;
+        outline: none;
+    }
+</style>
+
+
+
+
+    </head>
+
+
+    <body id="body">
+        <div id="background-wrapper">
+
+         <div id="background-image" class="image" style="background-image:url('http://digiehya.ir/wp-content/plugins/cmp-coming-soon-maintenance/themes/hardwork/img/hardwork_banner_full.jpg')"></div><div class="background-overlay solid-color" style="background-color:#0a0a0a;opacity:0.4"></div>
+        </div>
+
+        
+        <section class="section section-body">
+            <div class="logo-wrapper image"><a href="http://digiehya.ir" style="text-decoration:none"><img src="http://digiehya.ir/wp-content/uploads/2021/04/New-Project-1-1.png" class="graphic-logo" alt="logo"></a></div><h2 class="cmp-title animated ">COMING SOON...(بزودی...)</h2><p>دیجیتال احیاء الکترونیک گروپ<br />
+ زمینه کاری: زیرساخت های شبکه و سیستمهای نظارت تصویری وحفاظتی<br />
+احیا دیجیتال تماس: 03132242618<br />
+09128180032<br />
+مدیریت: مهندس حمید هراتیان فر<br />
+<a href="http://DORNABSICO.COM"><strong>طراحی سایت توسط درنا بی اس آی کوDESIGN BY DORNA BSI CO</strong></a></p>
+         
+         </section>
+        
+    <!-- Fade in background image after load -->
+    <script>
+        window.addEventListener("load",function(event) {
+            init();
+        });
+
+        function init(){
+
+            var image = document.getElementById('background-image');
+            var body = document.getElementById('body');
+            
+            if ( image === null ) {
+                image = document.getElementById('body');
+            } 
+
+            if ( image != null ) {
+                if ( image.className !== 'image-unsplash') {
+                    image.classList.add('loaded');
+                    body.classList.add('loaded');
+                }
+            }
+
+                    }
+    </script>
+
+    
+    <script>
+        /* Subscribe form script */
+        var ajaxurl = 'http://digiehya.ir/wp-admin/admin-ajax.php';
+        var security = '492be7ee26';
+        var msg = '';
+        
+        subForm = function( form, resultElement, emailInput, firstnameInput, lastnameInput, token = '' ) {
+            if ( emailInput.value !== '' ) {
+                const firstname = firstnameInput === null ? '' : firstnameInput.value;
+                const lastname = lastnameInput === null ? '' : lastnameInput.value;
+
+                fetch( ajaxurl, {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/x-www-form-urlencoded; charset=utf-8',
+                        'Access-Control-Allow-Origin': '*',
+                    },
+                    body: `action=niteo_subscribe&ajax=true&form_honeypot=&email=${ encodeURIComponent(emailInput.value) }&firstname=${ encodeURIComponent(firstname) }&lastname=${ encodeURIComponent(lastname) }&security=${ security }&token=${ token }`,
+                    credentials: 'same-origin'
+                } )
+                .then( (res) => {
+                    return res.json();
+                } )
+                .then( (data) => {
+                    resultElement.innerHTML = data.message; // Display the result inside result element.
+                    form.classList.add('-subscribed');
+                    if (data.status == 1) {
+                        form.classList.remove('-subscribe-failed');
+                        form.classList.add('-subscribe-successful');
+                        emailInput.value = '';
+                        firstnameInput ? firstnameInput.value = '' : null;
+                        lastnameInput ? lastnameInput.value = '' : null;
+                        
+                    } else {
+                        form.classList.add('-subscribe-failed');
+                    }
+                } )
+                .catch(function(error) { console.log(error.message); });
+
+            } else {
+                resultElement.innerHTML = 'Oops! Email is empty.';
+            }
+        }
+    </script>
+
+<!-- Build by CMP – Coming Soon Maintenance Plugin by NiteoThemes -->
+<!-- Visit plugin page https://wordpress.org/plugins/cmp-coming-soon-maintenance/ -->
+<!-- More CMP Themes on https://niteothemes.com -->
+    </body>
+
+</html>
